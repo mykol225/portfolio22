@@ -5,7 +5,6 @@ import Hero from './components/Hero'
 import image1 from './assets/alex-beholder-0sBHX4Hf6rs-unsplash.jpg'
 import image2 from './assets/jonathan-ansel-moy-de-vitry-fN_hPB1Vaek-unsplash.jpg'
 import image3 from './assets/toa-heftiba-FV3GConVSss-unsplash.jpg'
-import MenuOverlay from './components/MenuOverlay';
 
 function App() {
   return (

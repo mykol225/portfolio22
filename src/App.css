@@ -76,10 +76,14 @@ p {
 
 .visible {
 	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.2s ease-in;
 }
 
 .hidden {
 	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 0.2s, opacity 0.1s ease-out;
 }
 
 /*** HEADER ***/
@@ -98,14 +102,14 @@ p {
 
 .logo {
 	height: 52px;
-	mix-blend-mode: difference;
+	z-index: 30;
 }
 
 .menu-btn {
 	color: white;
 	height: 64px;
 	cursor: pointer;
-	mix-blend-mode: difference;
+	z-index: 30;
 }
 
 .menu-list {
@@ -114,10 +118,8 @@ p {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	color: rgb(202, 202, 202);
-	background-color: rgba(0, 0, 0, 0.65);
-	backdrop-filter: blur(20px);
-	z-index: 10;
+	z-index: 20;
+	user-select: none;
 }
 
 .menu-list ul {
@@ -130,12 +132,26 @@ p {
 	padding-top: 80px;
 	font-size: var(--font-xxl);
 	font-weight: 700;
+}
+
+.menu-list h1 {
 	color: #b3b3b3;
 }
 
-.menu-list li:hover {
+.menu-list h1:hover {
 	color: #ffffff;
 	cursor: pointer;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.85);
+	backdrop-filter: blur(20px);
+	z-index: 10;
 }
 
 /*** MAIN ***/
@@ -145,6 +161,7 @@ p {
 		var(--space-giant);
 	text-align: left;
 	background-color: #0a0a0b;
+	user-select: none;
 }
 
 /*** WORK ***/
