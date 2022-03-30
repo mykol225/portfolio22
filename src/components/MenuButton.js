@@ -62,7 +62,7 @@ const MenuButton = ({
         />
         <motion.line
           x1="10"
-          x2="54"
+          x2="54" //need to make it scalable based on height and width: x1 is distance from left, x2 is 
           y1="40"
           y2="40"
           variants={bottom}

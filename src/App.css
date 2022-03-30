@@ -70,6 +70,10 @@ p {
 	color: #686868;
 }
 
+ul {
+	padding: 0;
+}
+
 .App {
 	background-color: #0a0a0b;
 }
@@ -110,6 +114,7 @@ p {
 	height: 64px;
 	cursor: pointer;
 	z-index: 30;
+	margin-right: -10px;
 }
 
 .menu-list {
@@ -162,6 +167,19 @@ p {
 	text-align: left;
 	background-color: #0a0a0b;
 	user-select: none;
+}
+
+/* hover underline effect */
+
+#hero a {
+	color: #ececec;
+	text-decoration: underline 0.08em rgba(255, 255, 255, 0);
+	transition: text-decoration-color 300ms;
+}
+
+#hero a:hover {
+	color: #fff;
+	text-decoration-color: rgba(255, 255, 255, 1);
 }
 
 /*** WORK ***/
@@ -235,6 +253,12 @@ p {
 	align-items: center;
 	gap: var(--space-xs);
 	color: #0a0a0b;
+	margin-right: 0;
+	transition: transform 0.3s cubic-bezier(0.53, -0.31, 0, 1.88);
+}
+
+.content-cta:hover {
+	transform: translateX(5px);
 }
 
 .cs-img-container-left {
@@ -347,17 +371,18 @@ p {
 		font-size: var(--font-xs);
 	}
 
-	.headernav {
+	.header {
 		top: 40px;
 		padding: 0px 24px 24px 24px;
 	}
 
 	.logo {
-		height: 24px;
+		height: 32px;
 	}
 
 	.menu-btn {
-		height: 24px;
+		/* width: 40px;
+		height: 40px; */
 	}
 
 	#hero {
