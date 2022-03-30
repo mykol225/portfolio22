@@ -139,11 +139,11 @@ ul {
 	font-weight: 700;
 }
 
-.menu-list h1 {
+.menu-list a {
 	color: #b3b3b3;
 }
 
-.menu-list h1:hover {
+.menu-list a:hover {
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -378,11 +378,6 @@ ul {
 
 	.logo {
 		height: 32px;
-	}
-
-	.menu-btn {
-		/* width: 40px;
-		height: 40px; */
 	}
 
 	#hero {
