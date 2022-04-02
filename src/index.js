@@ -7,6 +7,7 @@ import { About } from './components/About';
 import { Contact } from './components/Contact';
 import Header from './components/Header';
 import { Footer } from './components/Footer';
+import { CaseStudy } from './components/CaseStudy';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/casestudy" element={<CaseStudy />} />
     </Routes>
     <Footer />
   </Router>,

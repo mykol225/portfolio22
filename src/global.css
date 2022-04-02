@@ -1,0 +1,348 @@
+:root {
+	/* FONT FAMILIES */
+	--ff-inter: 'Inter', Helvetica, Arial, sans-serif;
+	--ff-clash: 'Clash Display', sans-serif;
+
+	/* FONT WEIGHTS */
+	--fw-400: 400;
+	--fw-700: 700;
+
+	/* FONT SIZES */
+	--fs-display1: 96px;
+	--fs-display2: 64px;
+	--fs-display3: 48px;
+	--fs-xxl: 40px;
+	--fs-xl: 32px;
+	--fs-lg: 28px;
+	--fs-ml: 24px;
+	--fs-md: 22px;
+	--fs-sm: 20px;
+	--fs-xs: 16px;
+
+	/* LINE HEIGHTS */
+	--lh-lg: 160%;
+	--lh-md: 133%;
+
+	/* LINE SPACING */
+	--ls-100: -3%;
+	--ls-300: -2%;
+	--ls-500: 0.05%;
+	--ls-0: 0;
+
+	/* COLOR */
+	--cl-white: #ffffff;
+	--cl-gray100: #f9fafc;
+	--cl-gray200: #f1f4f8;
+	--cl-gray300: #e7eaee;
+	--cl-gray400: #dde0e4;
+	--cl-gray500: #b6bbc0;
+	--cl-gray600: #787f85;
+	--cl-gray700: #555d64;
+	--cl-gray800: #424a52;
+	--cl-gray900: #283038;
+	--cl-black: #0a0a0b;
+
+	/* SPACING */
+	--space-half: 4px;
+	--space-base: 8px;
+	--space-xxs: 16px;
+	--space-xs: 24px;
+	--space-sm: 32px;
+	--space-md: 40px;
+	--space-lg: 48px;
+	--space-xl: 56px;
+	--space-xxl: 64px;
+	--space-3xl: 80px;
+	--space-huge: 96px;
+	--space-giant: 128px;
+	--space-massive: 144px;
+}
+
+/****** CSS RESET (joshwcomeau.com) ******/
+
+/* 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+	margin: 0;
+}
+/* 3. Allow percentage-based heights in the application */
+html,
+body {
+	height: 100%;
+}
+/* Typographic tweaks!; 4. Add accessible line-height; 5. Improve text rendering */
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+/* 7. Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 9. Create a root stacking context */
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* more */
+ol,
+ul,
+li {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/******** STYLE CLASSES ******/
+/* FONT STYLES DESKTOP */
+.ft-hero-dt {
+	font-family: var(--ff-clash);
+	font-size: var(--fs-display1);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+	letter-spacing: var(--ls-300);
+}
+.ft-title-dt {
+	font-family: var(--ff-clash);
+	font-size: var(--fs-display3);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+	letter-spacing: var(--ls-300);
+}
+.ft-header-dt {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xl);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-100);
+}
+.ft-subhead1-dt {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-ml);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-100);
+}
+.ft-subhead2-dt {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-100);
+}
+.ft-bodylg-dt {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-ml);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+	letter-spacing: var(--ls-500);
+}
+.ft-body-dt {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+}
+.ft-bodybd-dt {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+}
+.ft-bodysm-dt {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+}
+.ft-caption-dt {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+	font-style: italic;
+}
+
+/* FONT STYLES TABLET */
+.ft-hero-tb {
+	font-family: var(--ff-clash);
+	font-size: var(--fs-display2);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+	letter-spacing: var(--ls-300);
+}
+.ft-title-tb {
+	font-family: var(--ff-clash);
+	font-size: var(--fs-xl);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+	letter-spacing: var(--ls-300);
+}
+.ft-header-tb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-lg);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-100);
+}
+.ft-subhead1-tb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-ml);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-100);
+}
+.ft-subhead2-tb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-100);
+}
+.ft-bodylg-tb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+	letter-spacing: var(--ls-500);
+}
+.ft-body-tb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+}
+.ft-bodybd-tb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+}
+.ft-bodysm-tb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+}
+.ft-caption-tb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+	font-style: italic;
+}
+
+/* FONT STYLES MOBILE */
+.ft-hero-mb {
+	font-family: var(--ff-clash);
+	font-size: var(--fs-xxl);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+	letter-spacing: var(--ls-300);
+}
+.ft-title-mb {
+	font-family: var(--ff-clash);
+	font-size: var(--fs-ml);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+	letter-spacing: var(--ls-300);
+}
+.ft-header-mb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-md);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-100);
+}
+.ft-subhead1-mb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-100);
+}
+.ft-subhead2-mb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-100);
+}
+.ft-bodylg-mb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+	letter-spacing: var(--ls-500);
+}
+.ft-body-mb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+}
+.ft-bodybd-mb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-700);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+}
+.ft-bodysm-mb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+}
+.ft-caption-mb {
+	font-family: var(--ff-inter);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-lg);
+	letter-spacing: var(--ls-500);
+	font-style: italic;
+}
+
+/******** UTILITY CLASSES ******/

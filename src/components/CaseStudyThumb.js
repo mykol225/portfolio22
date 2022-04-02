@@ -1,5 +1,6 @@
 import { motion, useAnimation } from 'framer-motion'
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import useOnScreen from '../hooks/useOnScreen'
 import arrowIcon from '../assets/ArrowIcon.svg'
 
@@ -23,7 +24,8 @@ const CaseStudyThumb = ({hAlign, vAlign, thumb, hCopy, pCopy}) => {
   }, [onScreen, controls]);
 
   return(
-    <motion.article
+    <Link to="/casestudy">
+          <motion.article
       className={`cs-thumb-container-${hAlign}`}
       ref={rootRef}
       initial={{opacity: 0, y: 100}}
@@ -31,12 +33,12 @@ const CaseStudyThumb = ({hAlign, vAlign, thumb, hCopy, pCopy}) => {
     >
     {/* TEXT CONTENT */}
       <section className={`cs-content-${hAlign} ${vAlign}`}>
-        <div className="cs-text">
-          <h2>{hCopy}</h2>
-          <p>{pCopy}</p>
+        <div className="cs-thumb-text">
+          <h2 className='ft-title-dt'>{hCopy}</h2>
+          <p className='ft-bodylg-dt'>{pCopy}</p>
         </div>
         <a href="google.com" className="content-cta">
-          <h4>Check it out</h4>
+          <h4 className='ft-bodybd-dt'>Check it out</h4>
           <img src={arrowIcon} alt="" />
         </a>
       </section>
@@ -45,6 +47,7 @@ const CaseStudyThumb = ({hAlign, vAlign, thumb, hCopy, pCopy}) => {
         <img src={thumb} alt="" className={`cs-img`} />
       </section>
     </motion.article>
+    </Link>
   )
 }
 

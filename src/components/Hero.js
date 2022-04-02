@@ -8,7 +8,7 @@ const Hero = ({children}) => {
       animate={{opacity: 1, y: 0}}
       transition={{ delay: 0, duration: 0.7}}
     >
-      <h1>{children}</h1>
+      <h1 className='ft-hero-dt'>{children}</h1>
     </motion.section>
   )
 }
