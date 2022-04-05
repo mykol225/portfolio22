@@ -9,10 +9,12 @@ import Header from './components/Header';
 import { Footer } from './components/Footer';
 import { CaseStudy } from './components/CaseStudy';
 import reportWebVitals from './reportWebVitals';
+import ScrollToTop from './hooks/ScrollToTop'
 
 ReactDOM.render(
   <React.StrictMode>
   <Router>
+   <ScrollToTop />
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />

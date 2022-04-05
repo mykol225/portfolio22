@@ -37,10 +37,10 @@ const CaseStudyThumb = ({hAlign, vAlign, thumb, hCopy, pCopy}) => {
           <h2 className='ft-title-dt'>{hCopy}</h2>
           <p className='ft-bodylg-dt'>{pCopy}</p>
         </div>
-        <a href="google.com" className="content-cta">
+        <div className="content-cta">
           <h4 className='ft-bodybd-dt'>Check it out</h4>
           <img src={arrowIcon} alt="" />
-        </a>
+        </div>
       </section>
     {/* IMAGE THUMBNAIL */}
       <section className={`cs-img-container-${hAlign}`}>
